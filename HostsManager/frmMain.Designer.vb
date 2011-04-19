@@ -29,6 +29,7 @@ Partial Class frmMain
         Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.mnuPop = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.InsertToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DeleteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.btSave = New System.Windows.Forms.Button()
@@ -81,20 +82,28 @@ Partial Class frmMain
         '
         'mnuPop
         '
-        Me.mnuPop.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EditToolStripMenuItem, Me.DeleteToolStripMenuItem})
+        Me.mnuPop.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InsertToolStripMenuItem1, Me.EditToolStripMenuItem, Me.DeleteToolStripMenuItem})
         Me.mnuPop.Name = "mnuPop"
-        Me.mnuPop.Size = New System.Drawing.Size(108, 48)
+        Me.mnuPop.Size = New System.Drawing.Size(153, 92)
+        '
+        'InsertToolStripMenuItem1
+        '
+        Me.InsertToolStripMenuItem1.Name = "InsertToolStripMenuItem1"
+        Me.InsertToolStripMenuItem1.ShortcutKeys = System.Windows.Forms.Keys.Insert
+        Me.InsertToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.InsertToolStripMenuItem1.Text = "Insert"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(107, 22)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
         Me.EditToolStripMenuItem.Text = "&Edit"
         '
         'DeleteToolStripMenuItem
         '
         Me.DeleteToolStripMenuItem.Name = "DeleteToolStripMenuItem"
-        Me.DeleteToolStripMenuItem.Size = New System.Drawing.Size(107, 22)
+        Me.DeleteToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Delete
+        Me.DeleteToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
         Me.DeleteToolStripMenuItem.Text = "&Delete"
         '
         'btSave
@@ -213,5 +222,6 @@ Partial Class frmMain
     Friend WithEvents OpenToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents ExitToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents InsertToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
 
 End Class
