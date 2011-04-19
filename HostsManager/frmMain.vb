@@ -1,7 +1,17 @@
 ﻿Imports System.IO
 Public Class frmMain
     Private hostentries As New List(Of HostEntry)
-    Private saved As Boolean
+    Private saved As Boolean = True
+
+    Private Sub frmMain_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+        If e.CloseReason = CloseReason.UserClosing Then
+            e.Cancel = True
+            Me.Hide()
+        End If
+    End Sub
+
+   
+
 
 
     Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
@@ -31,32 +41,28 @@ Public Class frmMain
             item.Tag = ent
         Next
         'Debug.WriteLine("---------------------------------------------------------------------------------------------")
+        stMessage.Text = "Created by Gabor Garami. Licensed under terms of CreativeCommons BY-SA"
 
 
-
-        saved = False
     End Sub
 
 
-    Private Sub btExit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btExit.Click
-        If Not saved Then
-            Dim res = MessageBox.Show(Me, "Changes are not saved. Are you sure to exit?", "Hosts Manager", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
-            If res <> DialogResult.OK Then Return
-        End If
-        Me.Close()
+    Private Sub btHide_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btHide.Click
+        Me.Hide()
     End Sub
 
     Private Sub btSave_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btSave.Click
         Try
             Dim sw As New StreamWriter(Environment.GetFolderPath(Environment.SpecialFolder.System) + "\drivers\etc\hosts")
 
-            'For Each ent In hostentries
-            '    Debug.WriteLine(ent)
-            '    sw.WriteLine(ent)
-            'Next
+            For Each ent In hostentries
+                '    Debug.WriteLine(ent)
+                sw.WriteLine(ent)
+            Next
             sw.Flush()
             sw.Close()
             saved = True
+            stMessage.Text = "Saved"
         Catch ex As Exception
             MessageBox.Show(Me, "Error happened while reading hosts file: " + vbCrLf + ex.Message, "Error - Hosts Handler", MessageBoxButtons.OK)
             Return
@@ -118,9 +124,18 @@ Public Class frmMain
                 hostentries.Remove(lvMain.SelectedItems.Item(0).Tag)
                 lvMain.Items.Remove(lvMain.SelectedItems.Item(0))
             End If
+            saved = False
+
         End If
 
     End Sub
 
 
+    Private Sub ExitToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ExitToolStripMenuItem.Click
+        If Not saved Then
+            Dim res As DialogResult = MessageBox.Show(Me, "Changes are not saved. Are you sure to exit?", "Hosts Manager", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
+            If res <> DialogResult.OK Then Return
+        End If
+        End
+    End Sub
 End Class

@@ -1,5 +1,8 @@
-*.suo 
+HostsManager.suo 
 HostsManager/bin
 HostsManager/obj
 HostsManager/publish
 *~
+*.exe
+*.cab
+*.msi

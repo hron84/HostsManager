@@ -22,14 +22,15 @@ Partial Class frmEdit
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmEdit))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIP = New System.Windows.Forms.TextBox()
         Me.lstAlias = New System.Windows.Forms.ListBox()
         Me.btOK = New System.Windows.Forms.Button()
         Me.btCancel = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.btAdd = New System.Windows.Forms.Button()
         Me.btRm = New System.Windows.Forms.Button()
+        Me.btAdd = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -84,23 +85,23 @@ Partial Class frmEdit
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Aliases"
         '
-        'btAdd
-        '
-        Me.btAdd.Location = New System.Drawing.Point(188, 73)
-        Me.btAdd.Name = "btAdd"
-        Me.btAdd.Size = New System.Drawing.Size(31, 23)
-        Me.btAdd.TabIndex = 6
-        Me.btAdd.Text = "+"
-        Me.btAdd.UseVisualStyleBackColor = True
-        '
         'btRm
         '
-        Me.btRm.Location = New System.Drawing.Point(190, 102)
+        Me.btRm.Image = Global.HostsManager.My.Resources.Resources.monitor_delete
+        Me.btRm.Location = New System.Drawing.Point(188, 104)
         Me.btRm.Name = "btRm"
-        Me.btRm.Size = New System.Drawing.Size(29, 23)
+        Me.btRm.Size = New System.Drawing.Size(29, 26)
         Me.btRm.TabIndex = 7
-        Me.btRm.Text = "-"
         Me.btRm.UseVisualStyleBackColor = True
+        '
+        'btAdd
+        '
+        Me.btAdd.Image = Global.HostsManager.My.Resources.Resources.monitor_add
+        Me.btAdd.Location = New System.Drawing.Point(188, 73)
+        Me.btAdd.Name = "btAdd"
+        Me.btAdd.Size = New System.Drawing.Size(31, 25)
+        Me.btAdd.TabIndex = 6
+        Me.btAdd.UseVisualStyleBackColor = True
         '
         'frmEdit
         '
@@ -118,10 +119,10 @@ Partial Class frmEdit
         Me.Controls.Add(Me.txtIP)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmEdit"
-        Me.ShowIcon = False
         Me.Text = "frmEdit"
         Me.ResumeLayout(False)
         Me.PerformLayout()

@@ -112,9 +112,29 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEAGABoAwAAFgAAACgAAAAQAAAAIAAAAAEAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAQO1InXoVIhroya44GEBgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAsZYKUx/mRyflBhckgZadhbnppaWlQUFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoKChDiarg8v9Umtga
+        er5JmMVIjsfZ5/STk5McHBwAAAAAAAAAAAAAAAAAAAAAAAAMDAxif5N6ttWQt9FVyeRb3/V40O1KldVj
+        bngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyVGVyttPC9v1j3/dd4vh50/BBkNMHEhsAAAAAAAAA
+        AAAAAABdXV2CgoJ+fn57e3uCgoJCZ3h3y+fH9/1e3PVa4fd71PFDktVTZXQ1NTUAAAAAAACurq7k4+PX
+        1tXW09Lb2NfEwcGfxNF50+7H9/1f3PVb4vd61vJOn95pd4MAAAAAAAC0tLTg3t2nck2nck2nck2nck2n
+        ck2ChXh80+3E9v1s3fZtyu1jo9dfmMsMFh4AAAC6urre29unck3IkmzKlG3Mlm7Nl3DPmXGXpJiA1Ouy
+        4/mLwOeu0/bE4PxjmswAAAC/v7/f3Nunck3HkWvJk2zLlW7Nl2/OmHLUon2Wq6N3vue00vDl8/+s0u9C
+        f7UAAADExMTh3tynck3HkWrIkmzKlG3QnXjVqIjYrIzXp4Shp51YpdiFsdtGndAQN00AAADJycnh3t6n
+        ck3GkGrHkWvOnnrXrpDZr5HWqYnVpYLWpH6nck3b1taQkJAAAAAAAADOzs7i39+nck3Fj2nLmXXWrpLa
+        tZrZsJLXrI3XqYjXqIWnck3b19eWlpYAAAAAAADS0tLi4N+nck2nck2nck2nck2nck2nck2nck2nck2n
+        ck2nck3c2didnZ0AAAAAAADV1dXx7+/j4d/i4N/i39/i397h3t7h3t3g3dzf3Nzf3Nve29vu7Oyjo6MA
+        AAAAAADY2NjW1tbU1NTR0dHOzs7KysrHx8fDw8O/v7+7u7u3t7eysrKurq6pqakAAADwfwAA8A8AAOAH
+        AADgDwAA+AcAAIABAACAAQAAgAAAAIAAAACAAAAAgAAAAIABAACAAQAAgAEAAIABAACAAQAA
+</value>
+  </data>
 </root>

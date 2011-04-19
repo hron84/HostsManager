@@ -112,12 +112,60 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="mnuPop.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="mnuPop.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="StatusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>115, 17</value>
+  </metadata>
+  <metadata name="NotifyIcon1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>232, 17</value>
+  </metadata>
+  <metadata name="mnuTray.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>347, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="NotifyIcon1.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEAGABoAwAAFgAAACgAAAAQAAAAIAAAAAEAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AABnZ2d8fHx4eHh0dHRwcHBsbGxpaWlQUFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoKCioqKj7+/v39/f2
+        9vb19fX39/f7+/uTk5McHBwAAAAAAAAAAAAAAAAAAAAAAAAMDAyNjY2zsrLHxcTIwcHEvbzNyMempaVq
+        amoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+Pj5mZmbIxsXZ1dR4eHg4ODgAAAAAAAAAAAAAAAAA
+        AAAAAABdXV2CgoJ+fn57e3uCgoJYWFirq6unp6dQUFBubm5hYWFeXl5aWlo1NTUAAAAAAACurq7k4+PX
+        1tXW09Lb2NfEwcHSzczRzMu9u7rV0tLMycnMycnY1tZycnIAAAAAAAC0tLTg3t2nck2nck2nck2nck2n
+        ck2nck2nck2nck2nck2nck3a1tR4eHgAAAAAAAC6urre29unck3IkmzKlG3Mlm7Nl3DPmXHRm3PTnXTU
+        nnWnck3X0tF+fn4AAAAAAAC/v7/f3Nunck3HkWvJk2zLlW7Nl2/OmHLUon3WpYDWpH+nck3X09OEhIQA
+        AAAAAADExMTh3tynck3HkWrIkmzKlG3QnXjVqIjYrIzXp4TWo32nck3Z1dSKiooAAAAAAADJycnh3t6n
+        ck3GkGrHkWvOnnrXrpDZr5HWqYnVpYLWpH6nck3b1taQkJAAAAAAAADOzs7i39+nck3Fj2nLmXXWrpLa
+        tZrZsJLXrI3XqYjXqIWnck3b19eWlpYAAAAAAADS0tLi4N+nck2nck2nck2nck2nck2nck2nck2nck2n
+        ck2nck3c2didnZ0AAAAAAADV1dXx7+/j4d/i4N/i39/i397h3t7h3t3g3dzf3Nzf3Nve29vu7Oyjo6MA
+        AAAAAADY2NjW1tbU1NTR0dHOzs7KysrHx8fDw8O/v7+7u7u3t7eysrKurq6pqakAAAD//wAA8A8AAOAH
+        AADgDwAA+B8AAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAA
+</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEAGABoAwAAFgAAACgAAAAQAAAAIAAAAAEAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AABnZ2d8fHx4eHh0dHRwcHBsbGxpaWlQUFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoKCioqKj7+/v39/f2
+        9vb19fX39/f7+/uTk5McHBwAAAAAAAAAAAAAAAAAAAAAAAAMDAyNjY2zsrLHxcTIwcHEvbzNyMempaVq
+        amoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+Pj5mZmbIxsXZ1dR4eHg4ODgAAAAAAAAAAAAAAAAA
+        AAAAAABdXV2CgoJ+fn57e3uCgoJYWFirq6unp6dQUFBubm5hYWFeXl5aWlo1NTUAAAAAAACurq7k4+PX
+        1tXW09Lb2NfEwcHSzczRzMu9u7rV0tLMycnMycnY1tZycnIAAAAAAAC0tLTg3t2nck2nck2nck2nck2n
+        ck2nck2nck2nck2nck2nck3a1tR4eHgAAAAAAAC6urre29unck3IkmzKlG3Mlm7Nl3DPmXHRm3PTnXTU
+        nnWnck3X0tF+fn4AAAAAAAC/v7/f3Nunck3HkWvJk2zLlW7Nl2/OmHLUon3WpYDWpH+nck3X09OEhIQA
+        AAAAAADExMTh3tynck3HkWrIkmzKlG3QnXjVqIjYrIzXp4TWo32nck3Z1dSKiooAAAAAAADJycnh3t6n
+        ck3GkGrHkWvOnnrXrpDZr5HWqYnVpYLWpH6nck3b1taQkJAAAAAAAADOzs7i39+nck3Fj2nLmXXWrpLa
+        tZrZsJLXrI3XqYjXqIWnck3b19eWlpYAAAAAAADS0tLi4N+nck2nck2nck2nck2nck2nck2nck2nck2n
+        ck2nck3c2didnZ0AAAAAAADV1dXx7+/j4d/i4N/i39/i397h3t7h3t3g3dzf3Nzf3Nve29vu7Oyjo6MA
+        AAAAAADY2NjW1tbU1NTR0dHOzs7KysrHx8fDw8O/v7+7u7u3t7eysrKurq6pqakAAAD//wAA8A8AAOAH
+        AADgDwAA+B8AAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAA
+</value>
+  </data>
 </root>

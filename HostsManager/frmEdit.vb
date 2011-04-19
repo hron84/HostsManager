@@ -13,4 +13,8 @@
     Private Sub btCancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btCancel.Click
         Me.Hide()
     End Sub
+
+    Private Sub btRm_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btRm.Click
+        lstAlias.Items.Remove(lstAlias.SelectedItem)
+    End Sub
 End Class
