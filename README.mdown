@@ -1,0 +1,15 @@
+Hosts file manager
+==================
+
+This program provides an easy management interface to Windows hosts file.
+
+NOTE: The program requires Administrator privilege on startup, because this is needed for allowing modify hosts file. The program sits on system tray, so it is needed only once per reboot.
+
+
+## Terms
+
+This program is published under terms of CreativeCommons BY-SA license (http://creativecommons.org/licenses/by-sa/3.0/) conditions. Please read this license before modify, share, or sell this program.
+
+## Limitations, known bugs
+
+This program is a quick & dirty tool, so it is not handles the comments in hosts file (removes them). 

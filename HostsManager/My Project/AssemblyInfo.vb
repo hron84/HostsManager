@@ -12,7 +12,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("Hosts file manager")> 
 <Assembly: AssemblyCompany("EzIT")> 
 <Assembly: AssemblyProduct("HostsManager")> 
-<Assembly: AssemblyCopyright("Copyright © EzIT 2011")> 
+<Assembly: AssemblyCopyright("Copyright © Gabor Garami 2011")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>

@@ -2,11 +2,15 @@
 Public Class frmMain
     Private hostentries As New List(Of HostEntry)
     Private saved As Boolean = True
-
+    Private hideNotified As Boolean = False
     Private Sub frmMain_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
         If e.CloseReason = CloseReason.UserClosing Then
             e.Cancel = True
             Me.Hide()
+            If Not hideNotified Then
+                NotifyIcon1.ShowBalloonTip(10, Me.Text, "The application is now running in background. Double click to this icon, or use popup menu to show it", ToolTipIcon.Info)
+                hideNotified = True
+            End If
         End If
     End Sub
 
@@ -137,5 +141,13 @@ Public Class frmMain
             If res <> DialogResult.OK Then Return
         End If
         End
+    End Sub
+
+    Private Sub OpenToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OpenToolStripMenuItem.Click
+        Me.Show()
+    End Sub
+
+    Private Sub NotifyIcon1_MouseDoubleClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles NotifyIcon1.MouseDoubleClick
+        Me.Show()
     End Sub
 End Class

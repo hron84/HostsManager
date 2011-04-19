@@ -187,7 +187,7 @@ Partial Class frmMain
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmMain"
-        Me.Text = "Hosts Handler"
+        Me.Text = "Hosts Manager"
         Me.mnuPop.ResumeLayout(False)
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
