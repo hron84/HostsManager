@@ -10,7 +10,7 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyTitle("HostsManager")> 
 <Assembly: AssemblyDescription("Hosts file manager")> 
-<Assembly: AssemblyCompany("EzIT")> 
+<Assembly: AssemblyCompany("Gabor Garami")> 
 <Assembly: AssemblyProduct("HostsManager")> 
 <Assembly: AssemblyCopyright("Copyright © Gabor Garami 2011")> 
 <Assembly: AssemblyTrademark("")> 
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.2.*")> 
-<Assembly: AssemblyFileVersion("1.0.2")> 
+<Assembly: AssemblyVersion("1.0.3.*")> 
+<Assembly: AssemblyFileVersion("1.0.3")> 

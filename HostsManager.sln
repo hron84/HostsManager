@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "HostsManager", "HostsManager\HostsManager.vbproj", "{26EC50D7-487A-469D-9A92-5FBEA02116E9}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{FC9950EA-F958-4C0F-A52D-2C0DF1BF4F30}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "HostManagerSetup", "HostManagerSetup\HostManagerSetup.vdproj", "{51324D00-D7C6-443B-ADEB-903CA8B25214}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,8 @@ Global
 		{26EC50D7-487A-469D-9A92-5FBEA02116E9}.Debug|x86.Build.0 = Debug|x86
 		{26EC50D7-487A-469D-9A92-5FBEA02116E9}.Release|x86.ActiveCfg = Release|x86
 		{26EC50D7-487A-469D-9A92-5FBEA02116E9}.Release|x86.Build.0 = Release|x86
-		{FC9950EA-F958-4C0F-A52D-2C0DF1BF4F30}.Debug|x86.ActiveCfg = Debug
-		{FC9950EA-F958-4C0F-A52D-2C0DF1BF4F30}.Debug|x86.Build.0 = Debug
-		{FC9950EA-F958-4C0F-A52D-2C0DF1BF4F30}.Release|x86.ActiveCfg = Release
-		{FC9950EA-F958-4C0F-A52D-2C0DF1BF4F30}.Release|x86.Build.0 = Release
+		{51324D00-D7C6-443B-ADEB-903CA8B25214}.Debug|x86.ActiveCfg = Debug
+		{51324D00-D7C6-443B-ADEB-903CA8B25214}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

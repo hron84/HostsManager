@@ -132,11 +132,19 @@ Public Class frmMain
         End If
     End Sub
 
+    Private Sub CopyItem()
+        Dim ent As HostEntry = lvMain.SelectedItems.Item(0).Tag
+        Dim line As String = ent.ToString
+        My.Computer.Clipboard.SetText(line)
+    End Sub
+
     Private Sub frmMain_KeyUp(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles lvMain.KeyUp
         If e.KeyCode = Keys.Insert Then
             InsertItem()
         ElseIf e.KeyCode = Keys.Delete Then
             DeleteItem()
+        ElseIf e.KeyCode = Keys.S And e.Control Then
+            CopyItem()
         End If
 
     End Sub
@@ -165,5 +173,10 @@ Public Class frmMain
  
     Private Sub InsertToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles InsertToolStripMenuItem1.Click
         InsertItem()
+    End Sub
+
+    Private Sub CopyToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CopyToolStripMenuItem.Click
+        CopyItem()
+
     End Sub
 End Class
