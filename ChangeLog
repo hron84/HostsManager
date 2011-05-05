@@ -1,0 +1,4 @@
+HostsManager 1.0.3
+==================
+ * Adding functionality to copy the selected hosts file entry to clipboard
+   with Ctrl+C
