@@ -56,23 +56,8 @@ Public Class frmMain
     End Sub
 
     Private Sub btSave_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btSave.Click
-        Try
-            Dim sw As New StreamWriter(Environment.GetFolderPath(Environment.SpecialFolder.System) + "\drivers\etc\hosts")
-
-            For Each ent In hostentries
-                '    Debug.WriteLine(ent)
-                sw.WriteLine(ent)
-            Next
-            sw.Flush()
-            sw.Close()
-            saved = True
-            stMessage.Text = "Saved"
-        Catch ex As Exception
-            MessageBox.Show(Me, "Error happened while reading hosts file: " + vbCrLf + ex.Message, "Error - Hosts Handler", MessageBoxButtons.OK)
-            Return
-        End Try
-
-
+        Save()
+        FlushDNS()
     End Sub
 
     Private Sub EditToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EditToolStripMenuItem.Click
@@ -133,6 +118,8 @@ Public Class frmMain
     End Sub
 
     Private Sub CopyItem()
+        If lvMain.SelectedItems.Count = 0 Then Return
+
         Dim ent As HostEntry = lvMain.SelectedItems.Item(0).Tag
         Dim line As String = ent.ToString
         My.Computer.Clipboard.SetText(line)
@@ -179,4 +166,37 @@ Public Class frmMain
         CopyItem()
 
     End Sub
+
+    Private Sub Save()
+        Try
+            Dim sw As New StreamWriter(Environment.GetFolderPath(Environment.SpecialFolder.System) + "\drivers\etc\hosts")
+
+            For Each ent In hostentries
+                '    Debug.WriteLine(ent)
+                sw.WriteLine(ent)
+            Next
+            sw.Flush()
+            sw.Close()
+            saved = True
+            stMessage.Text = "Saved"
+        Catch ex As Exception
+            MessageBox.Show(Me, "Error happened while reading hosts file: " + vbCrLf + ex.Message, "Error - Hosts Handler", MessageBoxButtons.OK)
+            Return
+        End Try
+    End Sub
+
+    Private Sub FlushDNS()
+        ' Process.Start(Environment.GetFolderPath(Environment.SpecialFolder.System) + "\ipconfig.exe", "/flushdns")
+        Dim si As New ProcessStartInfo()
+
+        si.CreateNoWindow = True
+        si.UseShellExecute = True
+        si.FileName = Environment.GetFolderPath(Environment.SpecialFolder.System) + "\ipconfig.exe"
+        si.WindowStyle = ProcessWindowStyle.Hidden
+        si.Arguments = "/flushdns"
+
+        Process.Start(si)
+
+    End Sub
+
 End Class
