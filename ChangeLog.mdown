@@ -3,3 +3,9 @@ HostsManager 1.0.3
 
  * Adding functionality to copy the selected hosts file entry to clipboard
    with Ctrl+C
+ 
+HostsManager 1.0.3.1
+====================
+
+ * Fixing Ctrl+C bug when no selection
+ * Call ipconfig /flushdns when Save button clicked
